@@ -1,7 +1,8 @@
 package slice
 
 func AllocateVar(b int) []byte {
-	return []byte{}
+	var s = make([]byte, b)
+	return s
 }
 
 func AllocateMake(b int) []byte {
